@@ -15,38 +15,62 @@ nav{
     display: flex;
     padding: 2% 6%;
     justify-content:space-between;
+    background-color: aqua;
     align-items: center;
 }
 nav img{
     width: 150px;
 }
-.nav-links{
-    flex: 1;
-    text-align: right;
+nav .nav-link{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    font-size: 20px;
+    
 }
-.nav-links ul li{
-    list-style-type: none;
-    display:inline-block;
-    padding: 8px 12px;
+
+nav .nav-link a{
+    text-decoration: none;
+    padding-left:10px;
+}
+nav .nav-link .dropbtn{
+    background-color:aqua;
+    color: #898bc9;
+    border: none;
+    font-size: 20px;
+    
+}
+nav .nav-link .dropdown{
+    display: inline-block;
     position: relative;
 }
-.nav-links ul li a{
-    color: #fff;
+nav .nav-link .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 100px;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 5px 5px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+nav .nav-link .dropdown-content a{
+    color: black;
+    padding: 8px 12px;
     text-decoration: none;
-    font-size: 13px;
-}
-.nav-links ul li::after{
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #dd4d43;
     display: block;
-    margin: auto;
-    transition: 0.5s;
 }
-.nav-links ul li:hover::after{
-    width: 100%;
+.dropdown-content a:hover{
+    background-color: #a2c7d0;
 }
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+nav .nav-link .dropbtn:hover{
+
+}
+
+
 .text-box{
     width: 90%;
     color: #fff;
@@ -142,6 +166,7 @@ p{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 .course-col{
     flex-basis: 31%;
