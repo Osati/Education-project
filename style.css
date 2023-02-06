@@ -30,6 +30,13 @@ nav img{
     padding: 8px 12px;
     position: relative;
 }
+.linkdown{
+    width: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    position: absolute;
+}
+
 .nav-links ul li a{
     color: #fff;
     text-decoration: none;
@@ -142,6 +149,7 @@ p{
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
 }
 .course-col{
     flex-basis: 31%;
