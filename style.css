@@ -66,10 +66,6 @@ nav .nav-link .dropdown-content a{
 .dropdown:hover .dropdown-content{
     display: block;
 }
-nav .nav-link .dropbtn:hover{
-
-}
-
 
 .text-box{
     width: 90%;
